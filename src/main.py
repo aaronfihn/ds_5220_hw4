@@ -104,11 +104,13 @@ def do_assignment() -> None:
     ax.set_title('Original dataset')
     ax.set(xlabel=r'$x_1$', ylabel=r'$x_2$')
     plt.savefig(Path(save_dir, 'original_dataset.png'))
+    plt.close()
 
     ax = sns.scatterplot(df2, x='x1', y='x2', hue='y')
-    ax.set_title('Modified_dataset')
+    ax.set_title('Modified dataset')
     ax.set(xlabel=r'$x_1$', ylabel=r'$x_2$')
     plt.savefig(Path(save_dir, 'modified_dataset.png'))
+    plt.close()
 
 
 if __name__ == '__main__':
