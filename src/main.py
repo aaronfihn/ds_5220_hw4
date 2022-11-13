@@ -81,6 +81,7 @@ def entropy(y: pd.Series) -> float:
 
 
 def do_assignment() -> None:
+    """Print the results for problems 1 and 2, as well as scatterplots for the analysis in problem 3."""
     df = get_data()
 
     # Do problem 1
